@@ -15,3 +15,7 @@ class TenableAuthentication:
             'TENABLE_ACCESSKEY': str(TENABLE_ACCESSKEY),
             'TENABLE_SECRETKEY': str(TENABLE_SECRETKEY)
         }
+
+    def getProxies(self):
+        PROXIES_HTTPS = os.getenv("PROXIES_HTTPS")
+        return PROXIES_HTTPS
